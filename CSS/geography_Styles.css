@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+body {
+  width: 94%;
+}
+ul {
+  list-style-type: disc;
+}
+/* Image zoomout animation */
+img {
+  box-shadow: 10px 10px 3px lightgrey;
+  animation: imgzoomout;
+  animation-duration: 3s;
+  animation-direction:normal;
+  animation-timing-function:linear;
+}
+@keyframes imgzoomout {
+  from  {width: 10%; height: 40%;}
+  to    {width: 95%; height: 95%;}
+  }
+
+/* Text scroll-up animation */
+div.contain {
+  font-size: 95%;
+  color: darkblue;
+  background-color: whitesmoke;
+  box-shadow: 3px -3px 5px lightgrey;
+  border-radius: 3%;
+  top: 5px;
+  left: 50px;
+  padding: 1%;
+  text-align: justify;
+  animation: scrolltext;
+  animation-duration: 10s;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+}
+@keyframes scrolltext {
+from  {top: 5px;}
+to    {top: 450px;}
+}
